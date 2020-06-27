@@ -9,12 +9,15 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>SMURFS! 2.0 W/ Redux</h1>
-        <div>Welcome to your state management version of Smurfs!</div>
-        <div>Start inside of your `src/index.js` file!</div>
-        <div>Have fun!</div>
+        <h1>HELLO AND WELCOME TO THE SMURFS</h1>
+        <p>You may recognize us from your childhood and we are so happy to have you all here with us.</p>
+        <p>Here at smurf farms we love when we have new guest and we hope that you join all of us.</p>
+        <p>Please feel free to join us by filling out your information.</p>
+  
+        <>
         <SmurfForm />
         <SmurfList />
+      </>
       </div>
     );
   }
