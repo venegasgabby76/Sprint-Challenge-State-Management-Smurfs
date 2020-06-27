@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const SmurfForm = () => {
+const SmurfForm = props => {
 
     const [addSmurf, setAddSmurf] = useState({
         id: "",
