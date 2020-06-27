@@ -36,18 +36,18 @@ export const smurfReducer = (state = initialState, action) => {
         case ADDING_SMURFS_SUCCESS:
             return {
                 ...state,
-                 smurfs: [...state.smurfs , {
-                     name:action.payload.name,
-                     age: action.payload.age,
-                     height: action.payload.height
-                 }]
+                smurfs: [...state.smurfs, {
+                    name: action.payload.name,
+                    age: action.payload.age,
+                    height: action.payload.height
+                }]
             };
-            case ADDING_SMURFS_FAILED:
-                return {
-                    ...state, 
-                    isFetching: false,
-                    error: action.payload
-                }
+        case ADDING_SMURFS_FAILED:
+            return {
+                ...state,
+                isFetching: false,
+                error: action.payload
+            }
         default:
             return state;
     }
